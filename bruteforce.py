@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import csv
 import itertools
 
@@ -20,8 +23,6 @@ def open_data(data_doc):
                 # Create a list of all actions if data is usable
                 elements_once.append(
                     [row[0], float(row[1]), float(round_profit)])
-            else:
-                pass
     return elements_once
 
 
@@ -54,8 +55,6 @@ def force_brute(max_money, elements):
             if cost <= float(max_money):
                 remaining_combinations.append({'combination': possibilities,
                                                'cost': cost, 'profit': profit})
-            else:
-                pass
     # Sort for have list[0] better  solution.
     sorted_combinations = sorted(
         remaining_combinations, key=lambda k: k['profit'], reverse=True)

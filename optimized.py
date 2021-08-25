@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import csv
 
 
@@ -19,8 +22,6 @@ def open_data(data_doc):
                 # Create a list of all actions if data is usable
                 elements_once.append(
                     [row[0], int(float(row[1]) * 100), int(round_profit)])
-            else:
-                pass
     return elements_once
 
 
