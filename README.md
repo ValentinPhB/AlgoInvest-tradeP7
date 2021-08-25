@@ -1,4 +1,4 @@
-# jsi_front  -JustStreamIt-
+# AlgoINvest&Trade
 
 ## Table of contents
 
