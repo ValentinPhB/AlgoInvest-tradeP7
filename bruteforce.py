@@ -22,7 +22,7 @@ def open_data(data_doc):
                 round_profit = round((float(row[1])*float(row[2]))/100, 2)
                 # Create a list of all actions if data is usable
                 elements_once.append(
-                    [row[0], float(row[1]), int(round_profit)])
+                    [row[0], float(row[1]), round_profit])
     return elements_once
 
 
